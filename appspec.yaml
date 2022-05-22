@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:109282132081:task-definition/stock-service-task:1"
+        TaskDefinition: "arn:aws:ecs:us-east-1:402320383251:task-definition/stock-service-task-definition:1"
         LoadBalancerInfo:
           ContainerName: "stock-service-container"
           ContainerPort: "8082"
