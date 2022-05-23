@@ -36,7 +36,8 @@ public class StockCommandController {
 	}
 
 	@PostMapping("add")
-	@Operation(summary = "Add a new stock", security = @SecurityRequirement(name = "bearerAuth"))
+//	@Operation(summary = "Add a new stock", security = @SecurityRequirement(name = "bearerAuth"))
+	@Operation(summary = "Add a new stock")
 	public String addStock(@RequestBody StockRestModel stockRestModel) {
 
 		CreateStockCommand createStockCommand = CreateStockCommand.builder().uuid(UUID.randomUUID().toString())
