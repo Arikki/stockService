@@ -10,12 +10,12 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 
 @Configuration
 @OpenAPIDefinition(info=@Info(title = "Stock API",description = "Handles stock details"))
-//@SecurityScheme(
-//	    name = "bearerAuth",
-//	    type = SecuritySchemeType.HTTP,
-//	    bearerFormat = "JWT",
-//	    scheme = "bearer"
-//	)
+@SecurityScheme(
+	    name = "bearerAuth",
+	    type = SecuritySchemeType.HTTP,
+	    bearerFormat = "JWT",
+	    scheme = "bearer"
+	)
 public class OpenApi30Config  {
 
 }
